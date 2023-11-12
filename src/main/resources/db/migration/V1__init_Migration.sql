@@ -79,12 +79,13 @@ CREATE TABLE price
 
 CREATE TABLE product
 (
-    id            BINARY(16) NOT NULL,
-    title         VARCHAR(255) NULL,
-    `description` VARCHAR(255) NULL,
-    image         VARCHAR(255) NULL,
-    category      BINARY(16) NULL,
-    price_id      BINARY(16) NULL,
+    id              BINARY(16) NOT NULL,
+    title           VARCHAR(255) NULL,
+    `description`   VARCHAR(255) NULL,
+    image           VARCHAR(255) NULL,
+    category        BINARY(16) NULL,
+    price_id        BINARY(16) NULL,
+    inventory_count INT NOT NULL,
     CONSTRAINT pk_product PRIMARY KEY (id)
 );
 
